@@ -50,14 +50,6 @@ export default function HomePage() {
                         <img src="./public/Ngamer/G1.webp" alt="Monitores gamer" />
                         <h3>Tarjetas de video gamer</h3>
                     </Link>
-                    <Link to="/tarjetas-de-video-gamer" className="category-card">
-                        <img src="./public/Ngamer/G1.webp" alt="Monitores gamer" />
-                        <h3>Tarjetas de video gamer</h3>
-                    </Link>
-                    <Link to="/tarjetas-de-video-gamer" className="category-card">
-                        <img src="./public/Ngamer/G1.webp" alt="Monitores gamer" />
-                        <h3>Tarjetas de video gamer</h3>
-                    </Link>
                 </div>
             </div>
             {/* Productos Destacados */}

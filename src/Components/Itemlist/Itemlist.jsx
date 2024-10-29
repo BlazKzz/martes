@@ -1,4 +1,4 @@
-import Item from "../Item/Item"
+import Itemcard from "../Item/Item"
 import { getProducts } from "../../data/asyncMock"
 import { useEffect, useState } from "react"
 import Loading from "../Loading/Loading"
@@ -22,7 +22,7 @@ export default function Itemlist(){
             ) : (
                 <div className="products-grid">
                     {products.map((prod) =>(
-                        <Item {...prod} key={prod.id}/>
+                        <Itemcard {...prod} key={prod.id}/>
                     ))}
                 </div>
             )}

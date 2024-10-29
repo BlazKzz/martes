@@ -1,0 +1,66 @@
+.item-detail-container {
+    max-width: 1200px;
+    margin: 80px auto 0; 
+    padding: 20px;
+}
+
+.item-detail-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+.item-detail-image img {
+    width: 100%;
+    height: auto;
+}
+
+.item-detail-info {
+    padding: 20px;
+}
+
+.item-detail-info h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #2d3a4b;
+}
+
+.description {
+    margin: 20px 0;
+    line-height: 1.6;
+    color: #666;
+}
+
+.price {
+    font-size: 24px;
+    font-weight: bold;
+    color: #2d3a4b;
+    margin: 15px 0;
+}
+
+.stock {
+    color: #666;
+    margin: 10px 0;
+}
+
+.sizes {
+    margin-top: 20px;
+}
+
+.sizes h3 {
+    margin-bottom: 10px;
+}
+
+.sizes ul {
+    display: flex;
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+}
+
+.sizes li {
+    padding: 5px 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}

@@ -1,0 +1,28 @@
+.categories-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas */
+    gap: 60px; /* Espacio entre los cuadros */
+    
+}
+
+.category-card {
+    display: flex; /* Usamos flexbox para alinear la imagen y el contenido */
+    flex-direction: row; /* Alinea horizontalmente los elementos hijos */
+    overflow: hidden; /* Para que no se desborde la imagen */
+    transition: transform 0.3s; /* Efecto de transición */
+    border-radius: 10px; /* Redondeamos las esquinas */
+    background: linear-gradient(145deg, #5d5b5b, #6e6c6c);
+    box-shadow:  19px 19px 38px #4a4949,
+                -19px -19px 38px #848181;
+    padding: 20px; /* Agregamos padding para separar el contenido de los bordes */
+}
+
+.category-card img {
+    width: 40%; /* Hacemos que la imagen ocupe un 40% del ancho del cuadro */
+    height: auto; /* Mantenemos la proporción de la imagen */
+    margin-right: 20px; /* Agregamos un margen a la derecha para separar la imagen del contenido */
+}
+
+.category-card .content {
+    flex: 1; /* Hacemos que el contenido ocupe el espacio restante */
+}

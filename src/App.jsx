@@ -19,7 +19,11 @@ function App() {
         <Route path='/products' element={<ProductsPage />} />
         <Route path='/products/:productId' element={<ItemDetail />} />
       </Routes>
+<<<<<<< HEAD
       {/* <Footer /> */}
+=======
+      <Footer />
+>>>>>>> 783f2f3243cc4d86772f517db52ebe9fb8484bf1
     </Router>
   );
 }

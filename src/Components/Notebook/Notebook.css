@@ -2,7 +2,10 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* 2 columnas */
     gap: 60px; /* Espacio entre los cuadros */
+<<<<<<< HEAD
     
+=======
+>>>>>>> 783f2f3243cc4d86772f517db52ebe9fb8484bf1
 }
 
 .category-card {

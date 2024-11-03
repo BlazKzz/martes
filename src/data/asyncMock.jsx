@@ -5,7 +5,11 @@ export const products = [
         price: 799.990,
         despcription: 'Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno',
         stock: 5,
+<<<<<<< HEAD
         img: '/Ngamer/G1.webp',
+=======
+        img: './public/Ngamer/G1.webp',
+>>>>>>> 783f2f3243cc4d86772f517db52ebe9fb8484bf1
         category: 'NGamer'
     },
     {
@@ -14,7 +18,11 @@ export const products = [
         price: 699.990,
         despcription: 'Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno',
         stock: 4,
+<<<<<<< HEAD
         img: '/Ngamer/G2.png',
+=======
+        img: './public/Ngamer/G2.png',
+>>>>>>> 783f2f3243cc4d86772f517db52ebe9fb8484bf1
         category: 'NGamer'
     },
     {
@@ -23,7 +31,11 @@ export const products = [
         price: 599.990,
         despcription: 'Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno',
         stock: 3,
+<<<<<<< HEAD
         img: '/Ngamer/G3.jpg',
+=======
+        img: './public/Ngamer/G3.jpg',
+>>>>>>> 783f2f3243cc4d86772f517db52ebe9fb8484bf1
         category: 'NGamer'
     },
     {
@@ -32,7 +44,11 @@ export const products = [
         price: 899.990,
         despcription: 'Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno',
         stock: 6,
+<<<<<<< HEAD
         img: '/Ngamer/G4.jpg',
+=======
+        img: './public/Ngamer/G4.jpg',
+>>>>>>> 783f2f3243cc4d86772f517db52ebe9fb8484bf1
         category: 'NGamer'
     },
     {
@@ -41,7 +57,11 @@ export const products = [
         price: 999.990,
         despcription: 'Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno',
         stock: 7,
+<<<<<<< HEAD
         img: '/Ngamer/G5.jpg',
+=======
+        img: './public/Ngamer/G5.jpg',
+>>>>>>> 783f2f3243cc4d86772f517db52ebe9fb8484bf1
         category: 'NGamer'
     },
     {
@@ -50,7 +70,11 @@ export const products = [
         price: 999.990,
         despcription: 'Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno',
         stock: 8,
+<<<<<<< HEAD
         img: '/Monitor_card/Mcard1.webp',
+=======
+        img: './public/Monitor_card/Mcard1.webp',
+>>>>>>> 783f2f3243cc4d86772f517db52ebe9fb8484bf1
         category: 'Monitor',
     },
     {
@@ -59,7 +83,11 @@ export const products = [
         price: 999.990,
         despcription: 'Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno',
         stock: 8,
+<<<<<<< HEAD
         img: '/Monitor_card/Mcard1.webp',
+=======
+        img: './public/Monitor_card/Mcard1.webp',
+>>>>>>> 783f2f3243cc4d86772f517db52ebe9fb8484bf1
         category: 'Monitor',
     },
     {
@@ -68,7 +96,11 @@ export const products = [
         price: 999.990,
         despcription: 'Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno',
         stock: 8,
+<<<<<<< HEAD
         img: '/Monitor_card/Mcard1.webp',
+=======
+        img: './public/Monitor_card/Mcard1.webp',
+>>>>>>> 783f2f3243cc4d86772f517db52ebe9fb8484bf1
         category: 'Monitor',
     },
     {
@@ -77,7 +109,11 @@ export const products = [
         price: 999.990,
         despcription: 'Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno',
         stock: 8,
+<<<<<<< HEAD
         img: '/Monitor_card/Mcard1.webp',
+=======
+        img: './public/Monitor_card/Mcard1.webp',
+>>>>>>> 783f2f3243cc4d86772f517db52ebe9fb8484bf1
         category: 'Monitor',
     },
     {
@@ -86,7 +122,11 @@ export const products = [
         price: 999.990,
         despcription: 'Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno',
         stock: 8,
+<<<<<<< HEAD
         img: '/Monitor_card/Mcard1.webp',
+=======
+        img: './public/Monitor_card/Mcard1.webp',
+>>>>>>> 783f2f3243cc4d86772f517db52ebe9fb8484bf1
         category: 'Monitor',
     },
 ];

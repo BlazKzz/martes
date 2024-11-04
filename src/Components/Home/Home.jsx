@@ -31,22 +31,30 @@ export default function HomePage() {
                 </div>
             </div>
             {/* Categorías Destacadas */}
-            <div className="featured-categories">
+            <div className="featured-categorie">
                 <h2>Categorías populares</h2>
-                <div className="categories-grid">
-                    <Link to="/notebooks-gamer" className="category-card">
+                <div className="categories-grids">
+                    <Link to="/notebooks-gamer" className="category-cards">
                         <img src="./public/Ngamer/G1.webp" alt="Notebooks gamer" />
                         <h3>Notebooks gamer</h3>
                     </Link>
-                    <Link to="/ps5" className="category-card">
+                    <Link to="/ps5" className="category-cards">
                         <img src="./public/Ngamer/G1.webp" alt="PS5" />
-                        <h3>PS5</h3>
+                        <h3>xd</h3>
                     </Link>
-                    <Link to="/smartphones-5g" className="category-card">
+                    <Link to="/smartphones-5g" className="category-cards">
                         <img src="./public/Ngamer/G1.webp" alt="Smartphones 5G" />
-                        <h3>Smartphones 5G</h3>
+                        <h3>xd </h3>
                     </Link>
-                    <Link to="/tarjetas-de-video-gamer" className="category-card">
+                    <Link to="/tarjetas-de-video-gamer" className="category-cards">
+                        <img src="./public/Ngamer/G1.webp" alt="Monitores gamer" />
+                        <h3>Tarjetas de video gamer</h3>
+                    </Link>
+                    <Link to="/tarjetas-de-video-gamer" className="category-cards">
+                        <img src="./public/Ngamer/G1.webp" alt="Monitores gamer" />
+                        <h3>Tarjetas de video gamer</h3>
+                    </Link>
+                    <Link to="/tarjetas-de-video-gamer" className="category-cards">
                         <img src="./public/Ngamer/G1.webp" alt="Monitores gamer" />
                         <h3>Tarjetas de video gamer</h3>
                     </Link>

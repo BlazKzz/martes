@@ -1,15 +1,20 @@
 import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faUser  } from '@fortawesome/free-solid-svg-icons';
+import { faUser, faBars } from '@fortawesome/free-solid-svg-icons';
 import './Navbar.css';
 import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [isDropdownOpen, setDropdownOpen] = useState(false);
+  const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const toggleDropdown = (e) => {
     e.preventDefault(); 
     setDropdownOpen(!isDropdownOpen);
+  };
+
+  const toggleMobileMenu = () => {
+    setMobileMenuOpen(!isMobileMenuOpen);
   };
 
   return (
@@ -18,7 +23,10 @@ const Navbar = () => {
       <div className="search-bar">
         <input type="text" placeholder="Busca un Producto" />
       </div>
-      <nav className="navbar">
+      <button className="mobile-menu-button" onClick={toggleMobileMenu}>
+        <FontAwesomeIcon icon={faBars} />
+      </button>
+      <nav className={`navbar ${isMobileMenuOpen ? 'mobile-menu-open' : ''}`}>
         <div 
           className="dropdown" 
           onMouseEnter={() => setDropdownOpen(true)} 

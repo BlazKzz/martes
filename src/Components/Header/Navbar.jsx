@@ -30,37 +30,37 @@ const Navbar = () => {
             <Link to="/Notebookpage">
               <h4>Notebooks</h4>
             </Link>
-            <Link to="/monitores">
+            <Link to="/products">
               <p>Gamer</p>
             </Link>
-            <Link to="/monitores">
+            <Link to="/products">
               <p>Trabajo y estudios</p>
             </Link>
-            <Link to="/monitores">
+            <Link to="/products">
               <p>Convertibles(2-en-1)</p>
             </Link>
-            <Link to="/">
+            <Link to="/products">
               <h4>Celulares</h4>
             </Link>
-            <Link to="">
+            <Link to="/products">
               <p>Samsung</p>
             </Link>
-            <Link to="">
+            <Link to="/products">
               <p>Iphone</p>
             </Link>
-            <Link to="">
+            <Link to="/products">
               <p>Xiaomi</p>
             </Link>
-            <Link to="/">
+            <Link to="/products">
               <h4>Consolas</h4>
             </Link>
-            <Link to="">
+            <Link to="/products">
               <p>Switch</p>
             </Link>
-            <Link to="">
+            <Link to="/products">
               <p>Play</p>
             </Link>
-            <Link to="">
+            <Link to="/products">
               <p>Xbox</p>
             </Link>
           </div>
@@ -71,34 +71,34 @@ const Navbar = () => {
         onMouseEnter={() => setDropdownOpen(true)}
         onMouseLeave={() => setDropdownOpen(false)}
       > 
-        <Link to="/">Hardware</Link>
+        <Link to="/products">Hardware</Link>
         {isDropdownOpen && (
           <div className="dropdown-content">
-            <Link to="/">
+            <Link to="/products">
               <h4>Tarjetas de Video</h4>
             </Link>
-            <Link to="">
+            <Link to="/products">
               <p>Nvidia</p>
             </Link>
-            <Link to="">
+            <Link to="/products">
               <p>AMD Radeon</p>
             </Link>
-            <Link to="/">
+            <Link to="/products">
               <h4>Procesadores</h4>
             </Link>
-            <Link to="">
+            <Link to="/products">
               <p>Intel</p>
             </Link>
-            <Link to="">
+            <Link to="/products">
               <p>AMD</p>
             </Link>
-            <Link to="/">
+            <Link to="/products">
               <h4>Ram</h4>
             </Link>
-            <Link to="">
+            <Link to="/products">
               <p>DDR4 Desktop</p>
             </Link>
-            <Link to="">
+            <Link to="/products">
               <p>DDR4 Notebook</p>
             </Link>
           </div>
@@ -109,69 +109,43 @@ const Navbar = () => {
         onMouseEnter={() => setDropdownOpen(true)}
         onMouseLeave={() => setDropdownOpen(false)}
       > 
-        <Link to="/">Perifericos</Link>
+        <Link to="/products">Perifericos</Link>
         {isDropdownOpen && (
           <div className="dropdown-content">
-            <Link to="/">
+            <Link to="/products">
               <h4>Mouses</h4>
             </Link>
-            <Link to="">
+            <Link to="/products">
               <p>Opticos</p>
             </Link>
-            <Link to="">
+            <Link to="/products">
               <p>Laser</p>
             </Link>
-            <Link to="">
+            <Link to="/products">
               <p>Inalambricos</p>
             </Link>
-            <Link to="/">
+            <Link to="/products">
               <h4>Teclados</h4>
             </Link>
-            <Link to="">
+            <Link to="/products">
               <p>Mecanicos</p>
             </Link>
-            <Link to="">
+            <Link to="/products">
               <p>Inalambricos</p>
             </Link>
-            <Link to="/monitores">
+            <Link to="/products">
               <h4>Monitores</h4>
             </Link>
-            <Link to="">
+            <Link to="/products">
               <p>144Hz o más</p>
             </Link>
-            <Link to="">
+            <Link to="/products">
               <p>Con FreeSync</p>
             </Link>
-            <Link to="">
+            <Link to="/products">
               <p>Con G-Sync</p>
             </Link>
           </div>
-          )}
-        </div>
-        <div 
-          className="dropdown"
-          onMouseEnter={() => setDropdownOpen(true)}
-          onMouseLeave={() => setDropdownOpen(false)}
-        > 
-          <a href="/">Electro</a>
-          {isDropdownOpen && (
-            <div className="dropdown-content">
-              <a href="/"><h4>Televisores</h4>
-                <a href="">LED</a>
-                <a href="">OLED</a>
-                <a href="">QLED</a>
-              </a>
-              <a href="/"><h4>Audio</h4>
-                <a href="">Soundbars</a>
-                <a href="">Parlantes Pc</a>
-                <a href="">Parlastes</a>
-              </a>
-              <a href="/"><h4>Aspiradoras</h4>
-                <a href="">De arrastre</a>
-                <a href="">Robot</a>
-                <a href="">Verticales</a>
-              </a>
-            </div>
           )}
         </div>
         <div 
@@ -180,15 +154,15 @@ const Navbar = () => {
           onMouseLeave={() => setDropdownOpen(false)}
         >
           <div className="user-icon">
-            <a href="">
-              <FontAwesomeIcon icon={faUser } /> 
-            </a>
+          <Link to="">
+            <FontAwesomeIcon icon={faUser } /> 
+          </Link>
           </div>
           {isDropdownOpen && (
             <div className='dropdown-content'>
-              <a href="">Cuenta</a>
-              <a href="">Ver Carrito</a>
-              <a href="">Cerrar sesion</a>
+            <Link to="/cuenta"><p>Cuenta</p></Link>
+            <Link to="/carrito"><p>Ver Carrito</p></Link>
+            <Link to="/cerrar-sesion"><p>Cerrar sesión</p></Link>
             </div>
           )}
         </div>

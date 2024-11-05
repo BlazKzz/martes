@@ -8,18 +8,33 @@ export default function ItemDetail() {
     const { productId } = useParams();
     const [product, setProduct] = useState(null);
     const [loading, setLoading] = useState(true);
+    const [quantity, setQuantity] = useState(1);
 
     useEffect(() => {
         getProductById(productId).then((data) => {
             setProduct(data);
-<<<<<<< HEAD
             console.log(data);
-=======
->>>>>>> 783f2f3243cc4d86772f517db52ebe9fb8484bf1
             setLoading(false);
         });
     }, [productId]);
 
+    // Funciones para control de cantidad
+    const decrementQuantity = () => {
+        if(quantity > 1) {
+            setQuantity(quantity - 1);
+        }
+    };
+
+    const incrementQuantity = () => {
+        if(product && quantity < product.stock) {
+            setQuantity(quantity + 1);
+        }
+    };
+
+    // Cálculo del precio total
+    const calculateTotalPrice = () => {
+        return product ? product.price * quantity : 0;
+    };
     if (loading) return <Loading />;
     if (!product) return <div className="error-message">Producto no encontrado</div>;
 
@@ -27,20 +42,15 @@ export default function ItemDetail() {
         <div className="item-detail-container">
             <div className="item-detail-grid">
                 <div className="item-detail-image">
-<<<<<<< HEAD
                     <img src={product.img} alt="Imagen del producto" />
-=======
                     <img src={product.img} alt={product.name} />
->>>>>>> 783f2f3243cc4d86772f517db52ebe9fb8484bf1
+                    <img src={product.img} alt="Imagen del producto" />
                 </div>
                 <div className="item-detail-info">
                     <h1>{product.name}</h1>
                     <p className="description">{product.description}</p>
                     <p className="price">Precio: ${product.price}</p>
                     <p className="stock">Stock: {product.stock}</p>
-<<<<<<< HEAD
-=======
-                    
                     <div className="sizes">
                         <h3>Tallas disponibles:</h3>
                         <ul>
@@ -49,7 +59,21 @@ export default function ItemDetail() {
                             ))}
                         </ul>
                     </div>
->>>>>>> 783f2f3243cc4d86772f517db52ebe9fb8484bf1
+                    <p className="stock">Stock disponible: {product.stock}</p>
+                    {/* Control de cantidad */}
+                    <div className="quantity-controls">
+                        <button onClick={decrementQuantity}>-</button>
+                        <span>{quantity}</span>
+                        <button onClick={incrementQuantity}>+</button>
+                    </div>
+
+                    {/* Precio total */}
+                    <p className="total-price">Precio Total: ${calculateTotalPrice()}</p>
+
+                    {/* Botón de compra */}
+                    <button className="buy-button">
+                        Comprar
+                    </button>
                 </div>
             </div>
         </div>

@@ -60,7 +60,7 @@ export default function ItemDetail() {
                     <h1>{product.name}</h1>
                     <p className="description">{product.description}</p>
                     <p className="price">Precio: ${product.price}</p>
-                    <p className="stock">Stock: {product.stock}</p>
+                    <p className="stocks">Stock: {product.stock}</p>
                     {/* Control de cantidad */}
                     <div className="quantity-controls">
                         <button onClick={decrementQuantity}>-</button>

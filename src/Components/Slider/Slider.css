@@ -36,7 +36,7 @@
     cursor: pointer;
     padding: 5px; 
     user-select: none;
-    color: #161515; 
+    color: rgb(238, 229, 229); 
 }
 
   .card img {

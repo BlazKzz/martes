@@ -4,7 +4,7 @@
   left: 0;
   width: 100%;
   padding: 20px 10%;
-  background: rgb(139, 72, 46);
+  background: #161616;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -67,18 +67,17 @@
   text-align: center; 
 }
 
-/* Estilos para el Dropdown */
 .dropdown {
   position: relative;
 }
 
 .dropdown-content {
-  display: none; /* Ocultar por defecto */
-  position: absolute; /* Posicionamiento absoluto para que se superponga */
-  left: 0; /* Alinear a la izquierda del dropdown */
-  top: 100%; /* Colocar justo debajo del dropdown */
-  background-color: rgb(71, 67, 67); /* Fondo  */
-  white-space: nowrap; /* Evitar que el contenido se divida en múltiples líneas */
+  display: none; 
+  position: absolute; 
+  left: 0; 
+  top: 100%; 
+  background-color: rgb(71, 67, 67); 
+  white-space: nowrap; 
 }
 
 .dropdown-content h4 {
@@ -91,9 +90,9 @@
 }
 
 .dropdown-content p {
-  position: relative; /* Necesario para el posicionamiento absoluto del pseudo-elemento */
-  color: rgb(255, 255, 255); /* Color del texto en el dropdown */
-  padding: 0px 30px; /* Espaciado interno */
+  position: relative; 
+  color: rgb(255, 255, 255); 
+  padding: 0px 30px; 
   margin-left: 80px;  
   cursor: pointer; 
 }
@@ -102,20 +101,20 @@
   content: '';
   position: absolute;
   left: 0;
-  bottom: -2px; /* Ajusta la posición vertical de la línea */
+  bottom: -2px; 
   width: 0;
   height: 2px;
-  background: #fff; /* Color de la línea */
-  transition: width 0.3s; /* Transición para el ancho */
+  background: #fff;
+  transition: width 0.3s; 
 }
 
 .dropdown-content p:hover::after {
-  width: 100%; /* Expande la línea al 100% al pasar el mouse */
+  width: 100%; 
 }
 
 .dropdown:hover .dropdown-content {
-  display: block; /* Muestra el dropdown al pasar el mouse */
+  display: block; 
 }
 .user-icon {
-  cursor: pointer; /* Cambia el cursor al pasar sobre el icono */
+  cursor: pointer; 
 }
